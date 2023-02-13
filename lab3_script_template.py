@@ -90,7 +90,23 @@ def process_sales_data(sales_csv, orders_dir):
         workbook= writer.book
         worksheet=writer.sheets[sheet_name]
         format1=workbook.add_format({'num_format':'$#,##0.00'})
-        worksheet.set_column('F:G', 12 , format1)
+        worksheet.set_column('F:G', 13, format1)
+        worksheet.set_column('A:A',11)
+        worksheet.set_column('B:B',13)
+        worksheet.set_column('C:C',15)
+        worksheet.set_column('D:D',15)
+        worksheet.set_column('E:E',15)
+        worksheet.set_column('H:H',10)
+        worksheet.set_column('I:I',30)
+        
+    
+
+
+        
+
+        writer.close()
+
+
         
         
         
